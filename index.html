@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibatik Nusantara - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    
+    <nav>
+        <h1>Dibatik</h1>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="konten.html">Konten</a></li>
+            <li><a href="contact.html" class="active">contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <section class="hero-section" style="background: linear-gradient(rgba(157, 93, 62, 0.777), rgba(157, 94, 62, 0.464)), url('img/bg.jpg'); background-size: cover; background-position: center;">
+        <div>
+            <p class="hero-subtitle">Warisan Budaya UNESCO</p>
+            <h1 class="hero-title">Mengenal Warisan <br><span>Batik Indonesia</span></h1>
+            <p class="hero-text">Warisan budaya yang tetap relevan dengan gaya masa kini</p>
+            <div class="hero-btn">
+                
+                <a href="about.html" class="btn-primary">Jelajahi</a>
+                
+                <a href="konten.html" class="btn-secondary">Lihat Koleksi</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section">
+    <h2 style="text-align: center; margin-bottom: 50px;">Filosofi Batik</h2>
+    
+    
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        
+        
+        <div style="float: left; width: 35%; margin-right: 5%;">
+            <div class="batik-card" style="height: 500px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h3 style="margin-bottom: 20px;">K.R.T. Hardjonagoro</h3>
+                    <img src="img/penemubatik.jpg" alt="K.R.T. Hardjonagoro" style="height: 100%; object-fit: cover;">
+                </div>
+                <p style="margin-top: auto; font-size: 0.95rem;">Pelopor batik modern Indonesia..</p>
+            </div>
+        </div>
+        
+        
+        <div style="float: right; width: 60%; height: 500px; background: linear-gradient(135deg, #FEF3C7, #FDE68A); padding: 35px; border-radius: 25px; box-shadow: var(--shadow-lg); border: 4px solid #FCD34D; overflow: hidden;">
+            <h3 style="color: var(--primary); margin-bottom: 25px; text-align: center; font-size: 1.8rem;"> Kisah Perjalanan Batik</h3>
+            <div style="height: 380px; overflow-y: auto; padding-right: 10px;">
+                <p style="line-height: 1.8; color: #8B4513; margin-bottom: 20px; font-size: 1.1rem;">
+                    <strong>K.R.T. Hardjonagoro</strong> (Go Tik Swan) adalah <strong>seniman legendaris Surakarta</strong> 
+                    yang mengubah wajah batik Indonesia selamanya.
+                </p>
+                <p style="line-height: 1.8; color: #8B4513; margin-bottom: 20px;">
+                    <strong>1960-an:</strong> Atas perintah <strong>Presiden Soekarno</strong>, beliau ciptakan 
+                    "<strong>Batik Indonesia</strong>" - perpaduan <strong>motif Jawa klasik</strong> 
+                    dan <strong>gaya pesisir berwarna-warni</strong>.
+                </p>
+                <p style="line-height: 1.8; color: #8B4513; margin-bottom: 20px;">
+                    Inovasi <strong>batik cap</strong> mempercepat produksi tanpa hilang 
+                    <strong>estetika tradisional</strong>. Karya beliau kini jadi 
+                    <strong>ekspor miliaran rupiah</strong>.
+                </p>
+                <p style="font-style: italic; color: #A0522D; text-align: center; font-size: 1.2rem; padding-top: 15px; border-top: 2px solid #FCD34D;">
+                    <strong>"Batik = Cerita Nusantara yang ditenun dengan tangan & jiwa"</strong>
+                </p>
+            </div>
+        </div>
+        
+        
+        <div style="clear: both;"></div>
+    </div>
+
+</section>
+
+    
+    <footer class="bg-gradient-to-r from-orange-900 to-black text-white py-8">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 mb-4">
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Dibatik Nusantara</h3>
+                    <p>Warisan budaya yang tetap relevan dengan gaya masa kini</p>
+                </div>
+                <div class="text-right md:text-left">
+                    <p>©Dibatik Nusantara</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        document.querySelectorAll('nav a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
